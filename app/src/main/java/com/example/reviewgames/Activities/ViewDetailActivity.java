@@ -18,12 +18,11 @@ import com.example.reviewgames.R;
 
 public class ViewDetailActivity extends AppCompatActivity {
     int position;
-    TextView tvName, tvFullDecs/*, tvId*/;
+    TextView tvName, tvFullDecs;
     ImageView imageDetail;
     WebView videoDetail;
     RatingBar ratingDetail;
     Button btnBack, btnGameplay;
-
 
 
     @Override
@@ -31,7 +30,7 @@ public class ViewDetailActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_view_detail);
 
-//        tvId = findViewById(R.id.id_game_detail);
+
         tvName = findViewById(R.id.tv_game_name);
         tvFullDecs = findViewById(R.id.tv_game_fullDesc);
         imageDetail = findViewById(R.id.imv_game_detail);
@@ -41,7 +40,6 @@ public class ViewDetailActivity extends AppCompatActivity {
         btnGameplay = findViewById(R.id.btn_detail_gameplay);
 
         position = getIntent().getIntExtra("id", 0);
-//        tvId.setText(Data.id[position] + "");
         tvName.setText(Data.nameGame[position]);
         tvFullDecs.setText(Data.fullDesc[position]);
         new DownloadPhoto(imageDetail).execute(Data.urlPhoto[position]);

@@ -60,6 +60,4 @@ public class DataGameplay {
             "<iframe width=\"460\" height=\"315\" src=\"https://www.youtube.com/embed/orQmG-_8nR8\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>"};
 
 
-
-
 }
