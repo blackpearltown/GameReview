@@ -69,6 +69,7 @@ public class GamePlayActivity extends AppCompatActivity {
 
         btnBack.setOnClickListener(toMenuClick);
     }
+
     public void onBackPressed() {
         super.onBackPressed();
         startActivity(new Intent(getApplicationContext(), MainActivity.class));
